@@ -1,12 +1,9 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License.
-
 # Dev environment
 variables:
   # Global
   ap_vm_image: ubuntu-20.04
 
-  namespace: randomforest #Note: A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
+  namespace: randomforest #A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
   postfix: v1
   location: brazilsouth
   environment: dev
@@ -16,8 +13,6 @@ variables:
   # Azure DevOps
   ado_service_connection_rg: Azure-ARM-Dev
   ado_service_connection_aml_ws: Azure-ARM-Dev
-
-  # DO NOT TOUCH
 
   # For pipeline reference
   resource_group: rg-$(namespace)-$(postfix)$(environment)
