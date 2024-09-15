@@ -2,44 +2,6 @@
 
 Welcome to the **Azure MLOps Random Regressor** project! This repository showcases a complete MLOps (Machine Learning Operations) pipeline implemented using Azure Machine Learning. The project includes data management, model training, evaluation, and deployment pipelines for both batch inference and real-time online endpoints.
 
-```mermaid
-graph TD
-    A[GitHub Repository] --> B[GitHub Actions]
-    B --> C[Terraform Scripts]
-    C --> D[Azure Infrastructure]
-    D --> E[Azure Machine Learning]
-    A --> F[GitHub Packages]
-    F --> G[Docker Images]
-    E --> H[Model Training Pipeline]
-    E --> I[Batch Deployment Pipeline]
-    E --> J[Online Deployment Pipeline]
-    H --> K[Datasets (/data)]
-    I --> L[Batch Endpoint]
-    J --> M[Online Endpoint]
-    L --> N[Batch Inference Users]
-    M --> O[Real-time Users]
-    
-    subgraph CI/CD
-        B
-        C
-        F
-    end
-    
-    subgraph Azure Services
-        D
-        E
-        I
-        J
-        L
-        M
-    end
-    
-    subgraph Users
-        N
-        O
-    end
-```
-
 ## Table of Contents
 
 - [Project Overview](#project-overview)
