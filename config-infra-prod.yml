@@ -1,12 +1,9 @@
-# Copyright (c) Microsoft Corporation. All rights reserved.
-# Licensed under the MIT License.
-
 # Prod environment
 variables:
   # Global
   ap_vm_image: ubuntu-20.04
 
-  namespace: mlopsv2 #Note: A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
+  namespace: mlopsv2 #A namespace with many characters will cause storage account creation to fail due to storage account names having a limit of 24 characters.
   postfix: 0001
   location: eastus
   environment: prod
@@ -16,8 +13,6 @@ variables:
   # Azure DevOps
   ado_service_connection_rg: Azure-ARM-Prod
   ado_service_connection_aml_ws: Azure-ARM-Prod
-
-  # DO NOT TOUCH
 
   # For pipeline reference
   resource_group: rg-$(namespace)-$(postfix)$(environment)
