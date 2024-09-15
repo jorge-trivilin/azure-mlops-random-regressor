@@ -1,4 +1,3 @@
-```markdown
 # Azure MLOps Random Regressor
 
 Welcome to the **Azure MLOps Random Regressor** project! This repository showcases a complete MLOps (Machine Learning Operations) pipeline implemented using Azure Machine Learning. The project includes data management, model training, evaluation, and deployment pipelines for both batch inference and real-time online endpoints.
