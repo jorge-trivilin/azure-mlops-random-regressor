@@ -3,17 +3,17 @@ terraform {
   required_providers {
     azurerm = {
       source  = "hashicorp/azurerm"
-      version = "~> 4.2.0"  # Mantive a versão que você estava usando
+      version = "~> 4.2.0"  
     }
   }
-  backend "azurerm" {}  # Mantive o backend que você estava usando
+  backend "azurerm" {}  
   required_version = ">= 1.0.0"
 }
 
 # Configure the Microsoft Azure Provider
 provider "azurerm" {
   features {}
-  # Você pode adicionar o resource_provider_registrations se necessário
+  # Adicionar o resource_provider_registrations se necessário
   # resource_provider_registrations = "none"
 }
 
@@ -24,7 +24,7 @@ data "http" "ip" {
   url = "https://ifconfig.me"
 }
 
-# Aqui você pode adicionar seus recursos, como no exemplo da documentação:
+
 # resource "azurerm_resource_group" "example" {
 #   name     = "example-resources"
 #   location = "Brazil South"  # Ajustado para a localização que você mencionou
