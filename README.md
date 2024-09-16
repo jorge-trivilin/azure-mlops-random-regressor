@@ -1,5 +1,9 @@
 # Azure MLOps Random Regressor
 
+![Version](https://img.shields.io/badge/version-1.0.0-blue)
+
+*This project was created by Jorge Trivilin.* 
+
 Welcome to the **Azure MLOps Random Regressor** project! This repository showcases a complete MLOps (Machine Learning Operations) pipeline implemented using Azure Machine Learning. The project includes data management, model training, evaluation, and deployment pipelines for both batch inference and real-time online endpoints.
 
 ![image](https://github.com/user-attachments/assets/377a0967-220a-4455-a66f-73db50fa3e35)
